@@ -23,7 +23,7 @@ jobs:
     - name: Create Dummy Google Services JSON
       run: |
         mkdir -p app/src/debug app/
-        echo '{"project_info":{"project_number":"0","project_id":"dummy","storage_bucket":"dummy.appspot.com"},"client":[{"client_info":{"mobilesdk_app_id":"1:0:android:0","android_client_info":{"package_name":"com.example.app"}},"oauth_client":[],"api_key":[{"current_key":"dummy_key"}],"services":{"analytics_service":{"status":1}}}]}' > app/google-services.json
+        echo '{"project_info":{"project_number":"0","project_id":"dummy","storage_bucket":"dummy.appspot.com"},"client":[{"client_info":{"mobilesdk_app_id":"1:0:android:0","android_client_info":{"package_name":"com.aistudio.myai.nxqtpl"}},"oauth_client":[],"api_key":[{"current_key":"dummy_key"}],"services":{"analytics_service":{"status":1}}}]}' > app/google-services.json
 
     - name: Create Dummy Debug Keystore
       run: |
