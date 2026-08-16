@@ -15,13 +15,13 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'zulu'
+        distribution: 'temurin'
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
     - name: Build Debug APK
-      run: ./gradlew assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx3g -Dkotlin.compiler.execution.strategy=in-process"
+      run: ./gradlew assembleDebug --no-daemon -Dksp.incremental=false -Dkotlin.compiler.execution.strategy=in-process
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
