@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My AI</string>
+    <string name="chat_input_hint">Ask My AI anything...</string>
+    <string name="welcome_title">Hello! I\'m My AI</string>
+    <string name="welcome_subtitle">Your fast, lightweight personal assistant. How can I help you today?</string>
+    <string name="engine_status_ready">AI Engine Ready</string>
+    <string name="engine_type_modular">Modular Core</string>
+    <string name="clear_chat">Clear Chat</string>
+    <string name="clear_chat_confirm">Are you sure you want to clear this conversation?</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="send">Send</string>
+    <string name="thinking">Thinking...</string>
+    <string name="copy_text">Copy</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+</resources>

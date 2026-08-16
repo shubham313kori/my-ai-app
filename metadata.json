@@ -1,0 +1,6 @@
+{
+  "name": "My AI",
+  "description": "Clean, lightweight personal AI assistant designed with modular engine architecture for on-device and offline AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
