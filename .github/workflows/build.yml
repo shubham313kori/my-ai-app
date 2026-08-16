@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'zulu'
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
@@ -25,7 +25,7 @@ jobs:
         keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 
     - name: Build Debug APK
-      run: ./gradlew assembleDebug --no-daemon --no-build-cache -Dorg.gradle.daemon=false -Dksp.incremental=false
+      run: ./gradlew assembleDebug --no-daemon --no-build-cache -Dksp.use.daemon=false -Dkotlin.compiler.execution.strategy=in-process
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
